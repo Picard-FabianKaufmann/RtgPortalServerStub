@@ -1,0 +1,37 @@
+{
+  "name": "picardfabiankaufmann/rtgserverstub",
+  "description": ".",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Friedrich Picard GmbH & Co. KG - Fabian Kaufmann",
+      "homepage": "https://picard.de"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^10.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "PicardFabianKaufmann\\RtgServerStub\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PicardFabianKaufmann\\RtgServerStub\\OpenapiServerStubServiceProvider"
+      ]
+    }
+  }
+}
